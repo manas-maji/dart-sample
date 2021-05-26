@@ -1,5 +1,7 @@
 import 'package:dart_git/calculator.dart' as calculator;
 
-void main(List<String> arguments) {
-  print('Hello world: ${calculator.calculate()}!');
+void main() {
+  final result = calculator.calculate(10, 0, calculator.OPERATION.DIVISION);
+
+  print(result);
 }
