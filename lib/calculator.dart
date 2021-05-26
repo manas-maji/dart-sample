@@ -13,6 +13,9 @@ num calculate(num a, num b, OPERATION operation) {
     case OPERATION.DIVISION:
       assert(b != 0, 'Value of b should not be zero for division');
       return a / b;
+    case OPERATION.PERCENTAGE:
+      assert(a != 0, 'Value of a should not be zero for percentage');
+      return b / a * 100;
   }
 }
 
@@ -21,4 +24,5 @@ enum OPERATION {
   SUBTRACTION,
   MULTIPLICATION,
   DIVISION,
+  PERCENTAGE,
 }
