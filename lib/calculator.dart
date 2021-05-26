@@ -1,6 +1,6 @@
 /// return => a operation b
 ///
-/// e.g => 4 + 2 = 7
+/// e.g => 4 + 2 = 8
 
 num calculate(num a, num b, OPERATION operation) {
   switch (operation) {
